@@ -18,7 +18,7 @@ export default function Button({ text, onClick, isSelected }) {
         bg-dark 
         text-primary 
         hover:bg-accent 
-        ${isSelected ? 'bg-accent active:bg-accent' : 'active:bg-extra'}
+        ${isSelected ? 'bg-accent' : 'bg-accent'}
         m-2 
         transform 
         rounded-md 

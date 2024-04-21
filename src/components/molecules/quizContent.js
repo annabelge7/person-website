@@ -21,22 +21,39 @@ const QuizContent = () => {
   const { question, answers, correctAnswer } = questions[activeQuestion]
 
   //select andn check answer
+  //   const onAnswerSelected = (answer, idx) => {
+  //     setChecked(true)
+  //     console.log(idx)
+  //     console.log(answer)
+
+  //     // console.log(correctAnswer)
+  //     // console.log(answer)
+  //     setSelectedAnswerIndex(idx)
+  //     console.log(selectedAnswerIndex)
+
+  //     if (answer === correctAnswer) {
+  //       setSelectedAnswer(true)
+  //       console.log('true')
+  //     } else {
+  //       setSelectedAnswer(false)
+  //       console.log('false')
+  //     }
+  //   }
+  useEffect(() => {
+    console.log('Selected Answer Index updated:', selectedAnswerIndex)
+  }, [selectedAnswerIndex])
+
   const onAnswerSelected = (answer, idx) => {
     setChecked(true)
-    console.log(idx)
-    // console.log(correctAnswer)
-    // console.log(answer)
     setSelectedAnswerIndex(idx)
+
     if (answer === correctAnswer) {
       setSelectedAnswer(true)
-      console.log('true')
     } else {
       setSelectedAnswer(false)
-      console.log('false')
     }
   }
 
-  //calculate score and increment to next question
   const nextQuestion = () => {
     console.log(result.score)
     setSelectedAnswerIndex(null)
@@ -83,7 +100,7 @@ const QuizContent = () => {
                     <Button
                       text={answer}
                       onClick={() => onAnswerSelected(answer, idx)}
-                      isSelected={selectedAnswerIndex === idx}
+                      isSelected={selectedAnswerIndex !== idx}
                     />
                   </QuizContainer>
                 ))}

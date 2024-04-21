@@ -1,17 +1,17 @@
 export default function PageBox({ code, title, image, text }) {
   return (
     <div
-      className=" bg-extra 
-    mb-4 mt-4 flex  flex-col 
-    items-center rounded-md p-4 pb-5 pt-5 shadow-md"
+      className=" mb-4 
+    mt-4 flex flex-col  items-center 
+    rounded-md bg-extra p-4 pb-5 pt-5 shadow-md"
     >
       {title && (
-        <h1 className=" bg-extra rounded-md pb-2 pl-56 pr-56 pt-2 text-xl font-semibold">
+        <h1 className=" rounded-md bg-extra pb-2 pl-56 pr-56 pt-2 text-xl font-semibold">
           {title}
         </h1>
       )}
       {code && (
-        <pre className="text-accent bg-dark my-2 overflow-auto rounded-md p-3 text-sm shadow-lg">
+        <pre className="my-2 overflow-auto rounded-md bg-dark p-3 text-sm text-accent shadow-lg">
           {code}
         </pre>
       )}
@@ -24,7 +24,7 @@ export default function PageBox({ code, title, image, text }) {
           />
         )}
         {text && (
-          <p className="text-dark bg-background text-md my-2 w-3/4 overflow-auto rounded-md p-7 shadow-lg">
+          <p className="text-md my-2 w-3/4 overflow-auto rounded-md bg-background p-7 text-dark shadow-lg">
             {text}
           </p>
         )}
