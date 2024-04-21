@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --color-secondary: #9792E3;    
+  --color-accent: #61E786;       
+  --color-background: rgba(151, 146, 227, 0.45); 
+  --color-primary:  #FDF7FA;
+}
+
+.theme-Summer {
+  --color-secondary: #FDF7FA;  /* Green secondary */
+  --color-accent: #FDF7FA;     /* Green accent */
+  --color-background: #609f77; /* Green background */
+  --color-primary:  #76c894;
+}
+
+.theme-Winter {
+  --color-secondary: #FDF7FA;  /* Blue secondary */
+  --color-accent: #FDF7FA;     /* Blue accent */
+  --color-background: #5095c4; /* Blue background */
+  --color-primary:  #70c6ff;
+}
+
+.theme-Fall {
+  --color-secondary: #FDF7FA;  /* Pink secondary */
+  --color-accent: #FDF7FA;     /* Pink accent */
+  --color-background: #de7284; /* Pink background */
+  --color-primary:  #ff93a5;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
