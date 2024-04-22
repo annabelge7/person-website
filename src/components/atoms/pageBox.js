@@ -1,15 +1,27 @@
-export default function PageBox({ code, title, image, text }) {
+export default function PageBox({ code, title, image, text, titleLink }) {
   return (
     <div
       className=" mb-4 
     mt-4 flex flex-col  items-center 
     rounded-md bg-extra p-4 pb-5 pt-5 shadow-md"
     >
-      {title && (
-        <h1 className=" rounded-md bg-extra pb-2 pl-56 pr-56 pt-2 text-xl font-semibold">
-          {title}
-        </h1>
-      )}
+      {title &&
+        (titleLink ? (
+          <a
+            href={titleLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-accent"
+          >
+            <h1 className="cursor-pointer rounded-md bg-extra pb-2 pl-56 pr-56 pt-2 text-xl font-semibold">
+              {title}
+            </h1>
+          </a>
+        ) : (
+          <h1 className="rounded-md bg-extra pb-2 pl-56 pr-56 pt-2 text-xl font-semibold">
+            {title}
+          </h1>
+        ))}
       {code && (
         <pre className="my-2 overflow-auto rounded-md bg-dark p-3 text-sm text-accent shadow-lg">
           {code}

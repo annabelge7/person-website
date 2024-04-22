@@ -60,9 +60,21 @@ const project5 = `
 export default function ProjectBox() {
   return (
     <div className="m-20 flex flex-col justify-between">
-      <PageBox title="stay-fresh.json" code={project} />
-      <PageBox title="wildcat-quest.json" code={project1} />
-      <PageBox title="wildhacks-website.json" code={project2} />
+      <PageBox
+        title="stay-fresh.json"
+        titleLink={'https://groceryhelper-fdb2d.web.app/login'}
+        code={project}
+      />
+      <PageBox
+        title="wildcat-quest.json"
+        titleLink={'https://wildcatquest-b1eb7.web.app/login'}
+        code={project1}
+      />
+      <PageBox
+        title="wildhacks-website.json"
+        titleLink={'https://www.wildhacks.net/'}
+        code={project2}
+      />
       <PageBox title="groove-vault.json" code={project3} />
       <PageBox title="mcguirewoods-search.json" code={project4} />
       <PageBox title="photo-app.json" code={project5} />
