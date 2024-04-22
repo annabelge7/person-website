@@ -5,7 +5,7 @@ import { Button } from '../atoms'
 const themes = ['', 'theme-Summer', 'theme-Winter', 'theme-Fall']
 
 // I tried to write this funciton (following a video on youtube) but I couldn't seem to figure it out aka
-// it wasnt sticking
+// it wasnt sticking when I reloaded the page. it works when I navigate but not when reloading
 // I would love some feedback on how to do this better/more efficiently!
 
 function useStickyState(defaultValue, key) {

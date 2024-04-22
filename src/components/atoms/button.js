@@ -15,10 +15,9 @@ export default function Button({ text, onClick, isSelected }) {
   return (
     <button
       className={`
-        bg-dark 
         text-primary 
         hover:bg-accent 
-        ${isSelected ? 'bg-accent' : 'bg-accent'}
+        ${isSelected ? 'bg-accent' : 'bg-dark'}
         m-2 
         transform 
         rounded-md 

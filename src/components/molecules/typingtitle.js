@@ -16,6 +16,7 @@ export default function TypingTitle() {
   const [typing, setTyping] = useState(true)
 
   useEffect(() => {
+    console.log('test')
     let interval
     if (typing) {
       interval = setInterval(() => {

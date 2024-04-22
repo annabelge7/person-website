@@ -83,15 +83,21 @@ const QuizContent = () => {
       <QuizBox>
         <h1 className="font-dark bg-primary"></h1>
         <div>
-          <div>
+          {/* <div>
             <h2>
               Question: {activeQuestion + 1}
               <span>/{questions.length}</span>
             </h2>
-          </div>
+          </div> */}
           <div>
             {!showResult ? (
               <div>
+                <div>
+                  <h2>
+                    Question: {activeQuestion + 1}
+                    <span>/{questions.length}</span>
+                  </h2>
+                </div>
                 <QuizContainer>
                   <h3>{questions[activeQuestion].question}</h3>
                 </QuizContainer>
@@ -100,7 +106,7 @@ const QuizContent = () => {
                     <Button
                       text={answer}
                       onClick={() => onAnswerSelected(answer, idx)}
-                      isSelected={selectedAnswerIndex !== idx}
+                      isSelected={selectedAnswerIndex === idx}
                     />
                   </QuizContainer>
                 ))}

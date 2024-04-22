@@ -21,9 +21,9 @@ export const quiz = {
     },
     {
       id: 4,
-      question: 'What country gifted the Statue of Liberty to the USA?',
-      answers: ['France', 'United Kingdom', 'Germany', 'Canada'],
-      correctAnswer: 'France',
+      question: 'What was the first national park in the US',
+      answers: ['Zion', 'Yosemite', 'Rocky Mountains', 'Yellowstone'],
+      correctAnswer: 'Yellowstone',
     },
     {
       id: 5,
@@ -38,12 +38,13 @@ export const quiz = {
     },
     {
       id: 6,
-      question: 'What year was the first iPhone released?',
-      answers: ['2009', '2005', '2003', '2007'],
-      correctAnswer: '2007',
+      question:
+        'How much of the ocean remains unexplored and unseen by humans?',
+      answers: ['55%', '95%', '70%', '80%'],
+      correctAnswer: '80%',
     },
     {
-      id: 1,
+      id: 7,
       question:
         'What is the primary gas responsible for the greenhouse effect?',
       answers: ['Oxygen', 'Carbon Dioxide', 'Nitrogen', 'Hydrogen'],
