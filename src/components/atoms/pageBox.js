@@ -1,4 +1,6 @@
-export default function PageBox({ code, title, image, text, titleLink }) {
+import Image from 'next/image'
+
+export default function PageBox({ code, title, text, titleLink }) {
   return (
     <div
       className=" mb-4 
@@ -28,13 +30,13 @@ export default function PageBox({ code, title, image, text, titleLink }) {
         </pre>
       )}
       <div className="flex justify-center pt-2">
-        {image && (
-          <img
+        {/* {image && (
+          <Image
             src={image}
             alt="personal pic"
             className="h-60 w-auto rounded-md p-2 shadow-lg"
           />
-        )}
+        )} */}
         {text && (
           <p className="text-md my-2 w-3/4 overflow-auto rounded-md bg-background p-7 text-dark shadow-lg">
             {text}

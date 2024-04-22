@@ -1,7 +1,15 @@
+import Image from 'next/image'
+
 const LogoItem = ({ href, imgSrc, altText }) => (
   <li>
     <a href={href} target="_blank" rel="noopener noreferrer">
-      <img src={imgSrc} alt={altText} className="size-9 p-1" />{' '}
+      <Image
+        src={imgSrc}
+        alt={altText}
+        width={500}
+        height={300}
+        className="size-9 p-1"
+      />
     </a>
   </li>
 )
