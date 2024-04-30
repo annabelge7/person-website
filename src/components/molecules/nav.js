@@ -19,7 +19,7 @@ export default function Nav() {
           text="Resume"
           isActive={pathname === '/experiences'}
         />
-        <NavItem href="/quiz" text="Trivia" isActive={pathname === '/quiz'} />
+        // <NavItem href="/quiz" text="Trivia" isActive={pathname === '/quiz'} />
       </ul>
     </nav>
   )
