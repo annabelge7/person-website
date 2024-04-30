@@ -5,7 +5,7 @@ export default function FooterNav() {
   return (
     <div className="flex">
       <ThemeButton />
-      // <ContactButton />
+
     </div>
   )
 }
