@@ -62,12 +62,12 @@ export default function ProjectBox() {
     <div className="m-20 flex flex-col justify-between">
       <PageBox
         title="stay-fresh.json"
-        titleLink={'https://groceryhelper-fdb2d.web.app/login'}
+        titleLink={'https://github.com/394-w24/GroceryHelper'}
         code={project}
       />
       <PageBox
         title="wildcat-quest.json"
-        titleLink={'https://wildcatquest-b1eb7.web.app/login'}
+        titleLink={'https://github.com/394-w24/WildcatQuest'}
         code={project1}
       />
       <PageBox
@@ -76,8 +76,16 @@ export default function ProjectBox() {
         code={project2}
       />
       <PageBox title="groove-vault.json" code={project3} />
-      <PageBox title="mcguirewoods-search.json" code={project4} />
-      <PageBox title="photo-app.json" code={project5} />
+      <PageBox
+        title="mcguirewoods-search.json"
+        titleLink={'https://github.com/annabelge7/CS-Law-McGuireWoods'}
+        code={project4}
+      />
+      <PageBox
+        title="photo-app.json"
+        titleLink={'https://github.com/annabelge7/photo-app-final'}
+        code={project5}
+      />
     </div>
   )
 }
