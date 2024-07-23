@@ -24,17 +24,13 @@ const text = `
 }`
 
 const biotext = `
-    My name is Annabel Edwards, and I'm currently a student at Northwestern from Chicago, IL.
-    I am very interested in AI and software driven solutions 
-    for renewable energy optimization, waste reduction, and 
-    eco-efficient urban planning, aiming to use my technical skills to make a contribution towards a 
-    greener future.`
+  My name is Annabel Edwards, a recent graduate from Northwestern University in Evanston, IL. I am proficient in Python, JavaScript, C/C++, HTML/CSS, and SQL, with experience in web application development and backend systems. I am passionate about environmental sustainability and motivated to apply my technical skills to make a positive impact. As a determined and hardworking individual, I thrive in dynamic environments and am eager to contribute to innovative projects.`
 
 export default function AboutBox() {
   return (
     <div className="m-20 flex flex-col">
-      <PageBox title="about-me.json" code={text} />
       <PageBox title="Bio" text={biotext} />
+      <PageBox title="about-me.json" code={text} />
     </div>
   )
 }

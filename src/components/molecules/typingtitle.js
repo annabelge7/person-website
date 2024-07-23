@@ -3,11 +3,7 @@ import { useEffect, useState, useMemo } from 'react'
 
 export default function TypingTitle() {
   const titles = useMemo(
-    () => [
-      'a software engineer.',
-      'a full-stack developer.',
-      'an environmentalist.',
-    ],
+    () => ['a software engineer.', 'an environmentalist.', 'a recent grad.'],
     [],
   )
 

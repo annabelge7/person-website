@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 
 const Resume = () => {
-  const resumeUrl = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/AnnabelEdward_Resume2024.pdf`
+  const resumeUrl = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/AnnabelEdwardsResume.pdf`
   const [isSmallScreen, setisSmallScreen] = useState(false)
 
   //this function checks every time the user changes the window size so whenever
