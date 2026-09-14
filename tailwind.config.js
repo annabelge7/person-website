@@ -1,32 +1,33 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  mode: 'jit',
-
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,jsx}',
+    './src/app/**/*.{js,jsx}',
+    './src/content/**/*.{js,jsx}',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       colors: {
-        primary: 'var(--color-primary)',
-        // secondary: '#9792E3 ',
-        // background: 'rgb(151, 146, 227, 0.45)',
-        dark: '#48435C',
-        // accent: '#61E786',
-        light: '#5A5766',
-        extra: 'rgb(167, 164, 177, 0.5)',
-
-        secondary: 'var(--color-secondary)',
-        accent: 'var(--color-accent)',
-        background: 'var(--color-background)',
+        cream: '#FFFFFF',
+        paper: '#F7F7F5',
+        ink: '#1E211F',
+        stone: '#5C6059',
+        line: '#DFDFDA',
+        teal: '#2F6B5E',
+        'teal-dark': '#254F45',
+        sage: '#8A9A74',
+        'sage-light': '#C3D1AC',
+      },
+      fontFamily: {
+        display: ['var(--font-fraunces)'],
+        sans: ['var(--font-manrope)'],
+      },
+      maxWidth: {
+        site: '1180px',
+      },
+      letterSpacing: {
+        wide2: '0.14em',
       },
     },
   },

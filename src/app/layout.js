@@ -1,38 +1,33 @@
-import { Inter } from 'next/font/google'
+import { Fraunces, Manrope } from 'next/font/google'
 import './globals.css'
-import { Header, Footer } from '@/components'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+})
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+  weight: ['400', '500', '600', '700'],
+})
 
 export const metadata = {
   title: 'Annabel Edwards',
-  description: 'Annabel Edwards Portfolio',
+  description:
+    'Environmentalist and engineer dedicated to protecting natural and marine spaces through research, engineering, and education.',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            // Simple condition to avoid infinite reload loops
-            if (!sessionStorage.getItem('reloaded')) {
-              sessionStorage.setItem('reloaded', 'true');
-              window.location.reload();
-            } else {
-              sessionStorage.removeItem('reloaded');
-            }
-          `,
-          }}
-        />
-      </head>
-      <body
-        className={`${inter.className} flex min-h-screen flex-col justify-between bg-primary font-medium`}
-      >
+    <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
+      <body className="flex min-h-screen flex-col font-sans">
         <Header />
-        <main className="mb-0 flex flex-col items-center">{children}</main>
-        <div id="modal-root"></div>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
