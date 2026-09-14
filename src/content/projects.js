@@ -57,6 +57,6 @@ export const projects = [
     description:
       'Pulls data from the EIA (US Energy Information Agency) API to generate charts of electricity generation and demand over a user-specified time period, in a given region, split by fuel type.',
     stack: ['Python', 'Hex'],
-    href: 'https://app.hex.tech/0b0728ed-3300-47f4-8f7d-42babfc57dbb/hex/Electricity-Demand-and-Generation-030RcdHyXoTYYmgpVvtptb',
+    href: 'https://app.hex.tech/0b0728ed-3300-47f4-8f7d-42babfc57dbb/hex/Electricity-Demand-and-Generation-030RcdHyXoTYYmgpVvtptb?dialog=publish',
   },
 ]

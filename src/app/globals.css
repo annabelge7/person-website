@@ -7,6 +7,12 @@
     scroll-behavior: smooth;
   }
 
+  @media (min-width: 640px) {
+    html {
+      zoom: 0.8;
+    }
+  }
+
   body {
     @apply bg-cream text-ink;
     font-feature-settings: 'ss01' 1;
